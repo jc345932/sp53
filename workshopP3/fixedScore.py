@@ -5,15 +5,19 @@ Broken program to determine score status
 
 # TODO: Fix this!
 
-score = float(input("Enter score: "))
-if score < 0:
-    print("Invald score")
-else:
-    if score > 100:
-        print("Invaild score")
+def get_score(score):
+    if score < 0:
+        return "Invalid score"
+    elif score > 100:
+        return "Invalid score"
     elif score > 90:
-        print("Excellent")
+        return "Excellent"
     elif score > 50:
-        print("Passable")
-    elif score < 50:
-        print("Bad")
+        return "Passable"
+    else:
+        return "Bad"
+
+def main():
+    print(get_score(float(input("Enter score: "))))
+
+main()

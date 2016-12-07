@@ -1,23 +1,30 @@
-""""
-value = 'Value'
-character = 'Char'
-print("{:^8s} {:^8s}" .format(value, character))
-for i in range (0, 256):
-    print("{:^8d} {:^8s}" .format(i, chr(i)))
+"""
+lower = 10
+upper = 100
+print("Enter a number ({}-{})".format(lower,upper))
+for i in range(10, 120, 11):
+          print("{} {}".format(i, chr(i)))
 """
 
 
-
 def get_number(lower, upper):
-    user_input = int(input("Enter a number:"))
-    if lower > user_input:
-        print("Please enter a valid number!")
-    if upper < user_input:
-        print("Please enter a valid number!")
+    invaildValue = False
+    user_input = 0
+    while not invaildValue:
+        try:
+            user_input = int(input("Enter a number(10-50):"))
+            if 50 > user_input > 10:
+                invaildValue = True
+            else:
+                print("Please enter a valid number!")
+        except ValueError:
+            print("Please enter a valid number!?")
     return user_input
 def main():
-    user_num = get_number(10, 50)
-    print("{:^6} {:^6}" .format(user_num, chr(user_num)))
-    for i in range (10, 50):
+    print(value_num(get_number(10,50)))
+
+
+def value_num(num):
+    for i in range(0, 256, num):
         print("{:^8d} {:^8s}" .format(i, chr(i)))
 main()
