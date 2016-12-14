@@ -12,3 +12,4 @@ for y in range(pick):
                 num = False
         lottery.sort()
     print(lottery)
+    #####
