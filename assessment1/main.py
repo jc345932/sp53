@@ -1,8 +1,8 @@
 """
  Name: LUO　JUNNAO
- Date: 1/5/2016
+ Date: 1/6/2016
  Details: This program can show the list of books, and provide users who can save the new book to the list and mark which book already be read.
- Github link:
+ Github link:  https://github.com/jc345932/sp53/tree/master/assessment1
 """
 
 
