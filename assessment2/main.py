@@ -2,7 +2,7 @@
 Name:LUO JUNNAO
 Date: 30/1/2017
 Brief Project Description: Make a book list to check or store which book users need
-GitHub URL:
+GitHub URL: https://github.com/jc345932/sp53/tree/master/assessment2
 """
 from booklist import BookList
 from kivy.app import App
